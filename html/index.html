@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style type="text/css">
+        canvas {
+            max-width: 400px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sorting Visualization</title>
+</head>
+
+<body>
+    <div id="intro">
+        <center>
+            <h1>Sorting Visualization</h1>
+            <h3>by</h3>
+            <h2>Abdullah Islam & Pradnya Bhumkar</h2>
+            <h2>Fall 2018 - TCSS 598</h2>
+        </center>
+    </div>
+    <center>
+        <div id="sortings">
+            <h2 id="labelUniform" style="display: none;">
+                Currently Sorting Uniform Data
+            </h2>
+            <h2 id="labelNormal" style="display: none;">
+                Currently Sorting Normal Data
+            </h2>
+            <h2>
+                <a href="#" id="startUniform">
+                    Sort Uniform Data
+                </a>
+            </h2>
+            <h2>
+                <a href="#" id="startNormal">
+                    Sort Normal Data
+                </a>
+            </h2>
+
+            <br>
+            <div id="canvases">
+                <canvas id="Bubble" width="150" height="150" style="float: left;"></canvas>
+                <canvas id="Insertion" width="150" height="150" style="float: left;"></canvas>
+                <canvas id="Merge" width="150" height="150" style="float: right;"></canvas>
+                <canvas id="Selection" width="150" height="150" style="float: right;"></canvas>
+                <canvas id="Quick" width="150" height="150" style="float: center;"></canvas>
+            </div>
+        </div>
+    </center>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+<script src="../src/index.js"></script>
+
+</html>
